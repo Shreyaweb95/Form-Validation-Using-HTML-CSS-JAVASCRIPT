@@ -1,0 +1,80 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./Assets/images/—Pngtree—raindrops\ on\ a\ window\ pane_19449111.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.form-container{
+  width: 750px;
+  height: 600px;
+  padding: 25px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,1);
+   transition: all 0.3s ease-in-out;
+  
+}
+/* .form-container:hover{   opacity: 0.5;} */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input{
+    width: 100%;
+      margin-bottom: 5px;
+      margin-right:5px;
+     padding: 2px;
+     background-color: #e6e4f3;
+  border: 1px solid #dbd7d7;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+input:hover{
+    border-color: blue;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    height: 16px;       /* fixed space so layout does not jump */
+    display: block;     /* ensures each error is on its own line */
+    margin-top: 3px;
+}
+#btn{
+  width: 100%;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #5b5675;
+}
+/* Shake Animation */
+.shake {
+  animation: shake 0.3s ease;
+  border: 2px solid red !important;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
